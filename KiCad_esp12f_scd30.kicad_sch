@@ -3251,6 +3251,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 49.53) (xy 195.58 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb28919-bd6d-4acf-96ad-2f4d8a3423ac")
+	)
+	(wire
+		(pts
 			(xy 110.49 152.4) (xy 110.49 153.67)
 		)
 		(stroke
@@ -3639,6 +3649,16 @@
 		)
 		(uuid "b387bbbb-9691-4434-9234-372e73ff0d47")
 	)
+	(bus
+		(pts
+			(xy 187.96 46.99) (xy 195.58 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b596a275-a168-4cc5-a5c9-6acd19486da1")
+	)
 	(wire
 		(pts
 			(xy 168.91 125.73) (xy 168.91 138.43)
@@ -3711,6 +3731,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 106.68) (xy 60.96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd3caed8-73ca-4e17-9b32-877186748377")
+	)
+	(wire
+		(pts
 			(xy 173.99 125.73) (xy 168.91 125.73)
 		)
 		(stroke
@@ -3738,6 +3768,16 @@
 			(type default)
 		)
 		(uuid "e683c499-4c69-4f0d-b69d-6b8cad7e3c4d")
+	)
+	(wire
+		(pts
+			(xy 52.07 111.76) (xy 60.96 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eade378c-7f52-4b18-931e-b4bbc32731a0")
 	)
 	(wire
 		(pts
@@ -3798,6 +3838,94 @@
 			(justify left bottom)
 		)
 		(uuid "21dcf671-561e-4932-baf4-b8ff55f416cb")
+	)
+	(global_label "D-"
+		(shape input)
+		(at 60.96 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e2ac8a1-886b-4bf2-b974-04098f3e5449")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.7876 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D-"
+		(shape input)
+		(at 195.58 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40d04bcd-542f-4e3a-8650-f88f217272c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.4076 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 60.96 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5cf3f87-dfe3-4ed4-83d4-9a2fef67d25d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.7876 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 195.58 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de7a25cc-f533-4353-a091-6b984f5a15e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.4076 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "RF_Module:ESP-12F")
