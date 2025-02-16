@@ -1,0 +1,22 @@
+#!/bin/bash
+NAME="app"
+DIR=/home/httpd/django.tzit.ru/first.site
+USER=www-data
+GROUP=www-data
+WORKERS=2
+BIND=unix:/home/httpd/django.tzit.ru/first.site/run/gunicorn.sock
+DJANGO_SETTINGS_MODULE=DjangoTzitRu.settings
+DJANGO_WSGI_MODULE=DjangoTzitRu.wsgi
+LOG_LEVEL=error
+cd $DIR
+source env/bin/activate
+export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
+export PYTHONPATH=$DIR:$PYTHONPATH
+exec /usr/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
+  --name $NAME \
+  --workers $WORKERS \
+  --user=$USER \
+  --group=$GROUP \
+  --bind=$BIND \
+  --log-level=$LOG_LEVEL \
+  --log-file=gunicorn.log
