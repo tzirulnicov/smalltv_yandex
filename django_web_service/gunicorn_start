@@ -1,12 +1,12 @@
 #!/bin/bash
 NAME="app"
-DIR=/home/httpd/django.tzit.ru/first.site
+DIR=/home/httpd/nonexistentdomain.ru
 USER=www-data
 GROUP=www-data
 WORKERS=2
-BIND=unix:/home/httpd/django.tzit.ru/first.site/run/gunicorn.sock
-DJANGO_SETTINGS_MODULE=DjangoTzitRu.settings
-DJANGO_WSGI_MODULE=DjangoTzitRu.wsgi
+BIND=unix:/home/httpd/nonexistentdomain.ru/gunicorn.sock
+DJANGO_SETTINGS_MODULE=Esp12fScd30.settings
+DJANGO_WSGI_MODULE=Esp12fScd30.wsgi
 LOG_LEVEL=error
 cd $DIR
 source env/bin/activate
